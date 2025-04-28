@@ -6,6 +6,7 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
 }
 
 a {
@@ -242,6 +243,7 @@ button[type='submit']:disabled:hover {
 .form-question {
     margin-top: 20px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .load-progress-container {
