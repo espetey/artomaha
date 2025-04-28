@@ -1,0 +1,282 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: #0039A6;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3300ff;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+}
+
+.logo-img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: url('./omahaArtScene1.jpg');
+    background-size: contain;
+}
+
+.permanentMarker {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lacquer {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.monoton {
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rockSalt {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.kablammo {
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 0;
+}
+
+
+.danfo {
+    font-family: "Danfo", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "ELSH" 0;
+}
+
+.rubikPuddles {
+    font-family: "Rubik Puddles", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chokokutai {
+    font-family: "Chokokutai", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rock3d {
+    font-family: "Rock 3D", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logos {
+    font-size: 48px;
+}
+
+.logo-art {
+    color: #e74a00;
+}
+
+.logo-omaha {
+    color: #00933C;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.left-panel {
+    position: fixed;
+    /* Keep the left panel fixed */
+    top: 0;
+    left: 0;
+    width: 50vw;
+    /* Take up half the viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #e8e8e8;
+    /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    /* Ensure it's on top or adjust as necessary */
+}
+
+.left-panel .logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right-panel {
+    position: relative;
+    left: 50vw;
+    /* Start from the half way point */
+    width: 50vw;
+    /* Take up the other half of the viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    overflow-y: auto;
+    /* Make it scrollable vertically */
+    background-color: #ffffff;
+    /* Example background color */
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Optional: For better responsiveness on smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .right-panel {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-img {
+        display: none;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+form input[type="text"],
+form input[type="email"],
+textarea {
+    /* width: 100%; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    /* cursor: pointer; */
+}
+textarea {
+    height: 100px;
+}
+form input:hover {
+    background-color: #fff;
+}
+form input:active {
+    background-color: #fff;
+}
+form input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+form input:disabled:hover {
+    background-color: #ccc;
+}
+button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 22px;
+}
+button[type='submit']:hover {
+    background-color: #0056b3;
+}
+button[type='submit']:active {
+    background-color: #004085;
+}
+button[type='submit']:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+button[type='submit']:disabled:hover {
+    background-color: #ccc;
+}
+
+.form-question {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.load-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.load-progress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
